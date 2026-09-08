@@ -1,0 +1,32 @@
+# Laravel
+/latihan-laravel/.env
+/latihan-laravel/.env.backup
+/latihan-laravel/.env.production
+/latihan-laravel/.phpactor.json
+/latihan-laravel/.phpunit.result.cache
+/latihan-laravel/.fleet
+/latihan-laravel/.idea
+/latihan-laravel/.nova
+/latihan-laravel/.phpunit.cache
+/latihan-laravel/.vscode
+/latihan-laravel/.zed
+/latihan-laravel/auth.json
+/latihan-laravel/node_modules
+/latihan-laravel/public/build
+/latihan-laravel/public/hot
+/latihan-laravel/public/storage
+/latihan-laravel/storage/*.key
+/latihan-laravel/storage/pail
+/latihan-laravel/vendor
+/latihan-laravel/Homestead.json
+/latihan-laravel/Homestead.yaml
+
+# Fiber
+/latihan-fiber/latihan-fiber
+/latihan-fiber/*.exe
+/latihan-fiber/.env
+
+# Umum
+*.log
+.DS_Store
+Thumbs.db
