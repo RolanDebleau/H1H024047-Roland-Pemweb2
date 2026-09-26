@@ -17,6 +17,7 @@
             <th>Program Studi</th>
             <th>Angkatan</th>
             <th>IPK</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -27,6 +28,7 @@
                 <td>{{ $mahasiswa->programStudi->nama }}</td>
                 <td>{{ $mahasiswa->angkatan }}</td>
                 <td>{{ $mahasiswa->ipk }}</td>
+                <td><a href="{{ route('mahasiswa.show', $mahasiswa->id) }}" class="btn btn-sm btn-primary">Detail</a></td>
             </tr>
         @endforeach
     </tbody>

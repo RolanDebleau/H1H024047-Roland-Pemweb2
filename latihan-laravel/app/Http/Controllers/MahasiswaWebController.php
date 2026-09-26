@@ -50,7 +50,8 @@ class MahasiswaWebController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $mahasiswa = Mahasiswa::with(['programStudi', 'matakuliah'])->findOrFail($id);
+        return view('mahasiswa.show', ['mahasiswa' => $mahasiswa]);
     }
 
     /**
