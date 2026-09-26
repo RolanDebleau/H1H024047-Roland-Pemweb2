@@ -12,6 +12,7 @@ Route::get('/data-matakuliah/{kode}', [MatakuliahController::class, 'show'])->na
 Route::get('/cari-mahasiswa', [MahasiswaController::class, 'cari'])->name('mahasiswa.cari');
 Route::get('/mahasiswa-data', [MahasiswaWebController::class, 'index'])->name('mahasiswa.data');
 Route::get('/mahasiswa-data/{mahasiswa}', [MahasiswaWebController::class, 'show'])->name('mahasiswa.show');
+Route::get('/mahasiswa-ipk-tertinggi', [MahasiswaWebController::class, 'ipkTertinggi'])->name('mahasiswa.ipk-tertinggi');
 
 Route::get('/salam', function () {
     return 'Selamat Datang di sini';

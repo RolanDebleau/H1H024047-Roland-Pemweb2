@@ -77,4 +77,16 @@ class MahasiswaWebController extends Controller
     {
         //
     }
+
+    public function ipkTertinggi()
+    {
+        $daftarMahasiswa = Mahasiswa::whereHas('programStudi', function ($query) {
+                $query->where('kode', 'TK');
+            })
+            ->with('programStudi')
+            ->orderBy('ipk', 'desc')
+            ->take(10)
+            ->get();
+        return view('mahasiswa.ipk-tertinggi', ['daftarMahasiswa' => $daftarMahasiswa]);
+    }
 }
